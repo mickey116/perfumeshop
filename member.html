@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>D'PERFUME | 會員中心</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-white py-md-2 shadow-sm sticky-top">
+    <div class="container">
+    <h1 class="navbar-brand ml-4 ml-md-0 mb-0">
+      <a href="index.html">D'Perfume 香水電商網站</a>
+    </h1>
+    <a class="navcart text-secondary d-inline-block d-md-none ml-auto position-relative mr-4" href="#">
+      <span class="material-icons">shopping_cart</span>
+      <span class="badge badge-pill badge-primary position-absolute"
+        style="top:-5px;right:-15px">3</span>
+    </a>
+
+  
+  <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+          <a class="nav-link font-size-lg py-3 py-md-2 mr-md-3 d-flex align-items-center font-weight-light  justify-content-center " href="products.html">
+            <span class="material-icons d-none d-md-inline-block">store</span>Product
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-size-lg  py-3 py-md-2 mr-md-3 d-flex align-items-center font-weight-light justify-content-center" href="login.html">
+            <span class="material-icons d-none d-md-inline-block">person</span>
+            log in
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-size-lg justify-content-center py-3 py-md-2 mr-md-3 d-flex align-items-center font-weight-light" href="member.html">
+            <span class="material-icons d-none d-md-inline-block">favorite</span>Wishlist
+          </a>
+        </li>
+        <li class="nav-item d-block d-md-none">
+          <a class="nav-link font-size-lg justify-content-center py-3 py-md-2 mr-md-3 d-flex align-items-center font-weight-light" href="#">
+            Blog
+          </a>
+        </li>
+        <li class="nav-item d-block d-md-none">
+          <a class="nav-link font-size-lg justify-content-center py-3 py-md-2 mr-md-3 d-flex align-items-center font-weight-light" href="#">
+            Contact
+          </a>
+        </li>
+        <li class="nav-item d-none d-md-block">
+          <a class="nav-link font-size-lg justify-content-center py-3 py-md-2 d-flex align-items-center font-weight-light" href="#">
+            <span class="material-icons">shopping_cart</span>Cart(3)
+          </a>
+        </li>
+    </ul>
+  </div>
+    </div>
+  </nav>
+  
+<header class="products-nav bg-primary d-none d-md-block mb-md-7">
+  <div class="container">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link text-white h5 font-weight-light mr-5" href="#">CHANEL</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white h5 font-weight-light mr-5" href="#">Jo Malone</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white h5 font-weight-light mr-5" href="#">Curology</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white h5 font-weight-light mr-5" href="#">Dior</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white h5 font-weight-light mr-5" href="#">Chloe</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white h5 font-weight-light" href="#">ZARA</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<main class="container pt-7 mb-7 mb-md-9">
+  <div class="row">
+    <div class="col-md-2 mb-7 mb-md-0">
+      <h2 class="h5 text-secondary mb-5 d-none d-md-block font-weight-medium">會員中心</h2>
+      <ul class="nav d-flex justify-content-between d-md-inline-block">
+        <li class="nav-item mb-0 mb-md-3">
+          <a class="nav-link text-secondary px-0 py-1 border-bottom border-primary font-weight-medium" href="#">會員資料修改</a>
+        </li>
+        <li class="nav-item mb-0 mb-md-3">
+          <a class="nav-link text-secondary px-0 py-1 font-weight-medium" href="#">訂單查詢</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary px-0 py-1 font-weight-medium" href="#">退／換貨申請</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-7 order-2 order-md-1">
+      <h3 class="h6 font-weight-medium border-bottom border-secondary pb-2 mb-2">個人資料修改</h3>
+      <form class="text-secondary mb-8">
+        <div class="form-group row no-gutters">
+          <label for="account" class="col-3 col-lg-2 col-form-label">會員帳號</label>
+          <div class="col-9 col-lg-7">
+            <input type="text" class="form-control-plaintext" id="account" value="email@example.com" readonly>
+          </div>
+        </div>
+        <div class="form-group row no-gutters">
+          <label for="name" class="col-3 col-lg-2 col-form-label">會員姓名</label>
+          <div class="col-9 col-lg-7">
+            <input type="text" class="form-control" id="name" placeholder="輸入姓名">
+          </div>
+        </div>
+        <div class="form-group row no-gutters">
+          <label for="gender" class="col-3 col-lg-2 col-form-label">會員性別</label>
+          <div class="col-3 col-lg-2 flex-shrink-1">
+            <select id="gender" class="form-control">
+            <option value="男" selected>男</option>
+            <option value="女">女</option>
+          </select>
+          </div>
+        </div>
+        <div class="form-group row no-gutters">
+          <label for="Email" class="col-3 col-lg-2 col-form-label">電子信箱</label>
+          <div class="col-9 col-lg-7">
+            <input type="email" class="form-control" id="Email" placeholder="email@example.com">
+          </div>
+        </div>
+        <div class="form-group row no-gutters">
+          <label for="tel" class="col-3 col-lg-2 col-form-label">手機號碼</label>
+          <div class="col-9 col-lg-7">
+            <input type="tel" class="form-control" id="tel" placeholder="輸入手機號碼">
+          </div>
+        </div>
+        <div class="form-group row no-gutters mb-4">
+          <label for="inputAdress" class="col-3 col-lg-2 col-form-label">聯絡地址</label>
+          <div class="col-9 col-lg-7">
+            <div class="form-row">
+              <div class="col-8 col-md-6">
+                <select id="inputAdress" class="form-control">
+                  <option value="台灣及離島" selected>台灣及離島</option>
+                  <option value="美國">美國</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row mt-2">
+              <div class="col-4 col-md-6">
+                <select class="form-control">
+                  <option value="高雄" selected>高雄</option>
+                  <option value="台北">台北</option>
+                </select>
+              </div>
+              <div class="col-4 col-md-6">
+                <select class="form-control">
+                  <option value="鹽埕區" selected>鹽埕區</option>
+                  <option value="小港區">小港區</option>
+                </select>
+              </div>                   
+            </div>
+            <div class="form-group mt-2">
+              <input type="text" class="form-control" placeholder="請輸入地址">
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+              <label class="custom-control-label" for="customCheck1">我願意收到最新優惠情報</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row no-gutters">
+          <label for="sendAdress" class="col-3 col-lg-2 col-form-label">配送地址</label>
+          <div class="col-9 col-lg-7">
+            <div class="form-row">
+              <div class="col-8 col-md-6">
+                <select id="sendAdress" class="form-control">
+                  <option value="台灣及離島" selected>台灣及離島</option>
+                  <option value="美國">美國</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row mt-2">
+              <div class="col-4 col-md-6">
+                <select class="form-control">
+                  <option value="高雄" selected>高雄</option>
+                  <option value="台北">台北</option>
+                </select>
+              </div>
+              <div class="col-4 col-md-6">
+                <select class="form-control">
+                  <option value="鹽埕區" selected>鹽埕區</option>
+                  <option value="小港區">小港區</option>
+                </select>
+              </div>                   
+            </div>
+            <div class="form-group mt-2">
+              <input type="text" class="form-control" placeholder="請輸入地址">
+            </div>
+            <div class="form-row">
+              <div class="col-8 col-md-6">
+                <button type="submit" class="btn btn-primary btn-block">確定修改</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <h3 class="h6 font-weight-medium border-bottom border-secondary pb-2 mb-3">修改密碼</h3>
+      <form class="text-secondary">
+        <div class="form-group row no-gutters">
+          <label for="oldPassword" class="col-3 col-lg-2 col-form-label">舊密碼</label>
+          <div class="col-9 col-lg-7">
+            <input type="password" class="form-control" id="oldPassword">
+          </div>
+        </div>
+        <div class="form-group row no-gutters">
+          <label for="newPassword" class="col-3 col-lg-2 col-form-label">新密碼</label>
+          <div class="col-9 col-lg-7">
+            <input type="password" class="form-control" id="newPassword">
+          </div>
+        </div>
+        <div class="form-group row no-gutters mb-0">
+          <label for="confirmPassword" class="col-3 col-lg-2 col-form-label">確認密碼</label>
+          <div class="col-9 col-lg-7">
+            <input type="password" class="form-control" id="confirmPassword">
+            <div class="form-row mt-3">
+              <div class="col-8 col-md-6">
+                <button type="submit" class="btn btn-primary btn-block">變更密碼</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-3 mb-7 mb-md-0 order-1 order-md-2">
+      <div class="d-flex align-items-center mb-5 text-secondary">
+        <span class="material-icons">person</span>
+        <span>會員編碼</span>
+        <span class="ml-1 font-size-lg font-weight-medium">T00020080615</span>
+      </div>
+      <ul class="list-unstyled mb-0">
+        <li class="row  text-secondary mb-3">
+          <div class="col-3 col-md-4 pr-0">購物車</div>
+          <div class="col-9 col-md-8">56</div>
+        </li>
+        <li class="row  text-secondary mb-3">
+          <div class="col-3 col-md-4 pr-0">我的收藏</div>
+          <div class="col-9 col-md-8">23</div>
+        </li>
+        <li class="row text-secondary mb-3">
+          <span class="col-3 col-md-4 pr-0">完成訂單</span>
+          <span class="col-9 col-md-8">8</span>
+        </li>
+        <li class="row text-secondary mb-3">
+          <span class="col-3 col-md-4 pr-0">會員紅利</span>
+          <span class="col-9 col-md-8">2680</span>
+        </li>
+        <li class="row text-secondary">
+          <span class="col-3 col-md-4 pr-0">邀請碼</span>
+          <span class="col-9 col-md-8">TK2075</span>
+        </li>
+      </ul>
+      <p class="font-size-sm text-secondary">新戶輸入邀請碼即可獲贈紅利點數1000點</p>
+      <!-- <table class="table table-borderless text-secondary mb-0">
+        <tbody>
+          <tr>
+            <th scope="row">購物車</th>
+            <td>56</td>
+          </tr>
+          <tr>
+            <th scope="row" >我的收藏</th>
+            <td >23</td>
+          </tr>
+          <tr>
+            <th scope="row">完成訂單</th>
+            <td>8</td>
+          </tr>
+          <tr>
+            <th scope="row">會員紅利</th>
+            <td>2680</td>
+          </tr>
+          <tr>
+            <th class="pb-0" scope="row">邀請碼</th>
+            <td class="pb-0">TK2075</td>
+          </tr>
+          <tr>
+            <td class="pb-0" colspan="2" class="font-size-sm">新戶輸入邀請碼即可獲贈紅利點數1000點</td>
+          </tr>
+        </tbody>
+      </table> -->
+
+      
+      
+    </div>
+  </div>
+
+</main>
+
+
+  <footer class="bg-primary py-4">
+  <div class="container d-flex">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="#">
+        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfumewhite.png" alt="logo">
+      </a>
+      <p class="text-white font-size-sm ml-5 ml-md-4">© 2020. All Rights Reserved.</p>
+    </div>
+    <ul class="nav ml-auto d-none  d-md-flex"> 
+      <li class="nav-item"><a href="products.html" class="nav-link text-white h5">Product</a></li>
+      <li class="nav-item"><a href="#" class="nav-link text-white h5">Blog</a></li>
+      <li class="nav-item"><a href="#" class="nav-link text-white h5">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
+
