@@ -1,23 +1,20 @@
-$color: #00cc99;
+// bootstrap
+@import './vendors/bootstrap/scss/functions';
+@import './helpers/variables';
+@import './vendors/bootstrap/scss/mixins';
+@import './vendors/bootstrap/scss/bootstrap.scss';
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
+// base
+@import './base/grid.scss';
+@import './base/base';
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+
+// components
+@import './components/navbar';
+@import './components/card';
+
+
+// pages
+@import './pages/index';
+

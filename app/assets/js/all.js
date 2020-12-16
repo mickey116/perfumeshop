@@ -1,5 +1,2 @@
-console.log('Hello!');
+AOS.init();
 
-$(document).ready(() => {
-  console.log('HesSchool Hello!');
-});
