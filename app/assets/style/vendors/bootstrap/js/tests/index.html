@@ -6,7 +6,19 @@
     <title>Bootstrap Plugin Test Suite</title>
 
     <!-- jQuery -->
-    <script src="../../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script>
+      (function () {
+        var path = '../../site/docs/4.2/assets/js/vendor/jquery-slim.min.js'
+        // get jquery param from the query string.
+        var jQueryVersion = location.search.match(/[?&]jquery=(.*?)(?=&|$)/)
+
+        // If a version was specified, use that version from jQuery CDN
+        if (jQueryVersion) {
+          path = 'https://code.jquery.com/jquery-' + jQueryVersion[1] + '.min.js'
+        }
+        document.write('<script src="' + path + '"><\/script>')
+      }())
+    </script>
     <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
 
     <!-- QUnit -->
@@ -46,7 +58,7 @@
         'contextmenu'
       ].forEach(function(eventAlias) {
         $.fn[eventAlias] = function() {
-          throw new Error('Using the ".' + eventAlias + '()" method is not allowed, so that Bootstrap can be compatible with custom jQuery builds which exclude the "event aliases" module that defines said method. See https://github.com/twbs/bootstrap/blob/v4-dev/.github/CONTRIBUTING.md#js')
+          throw new Error('Using the ".' + eventAlias + '()" method is not allowed, so that Bootstrap can be compatible with custom jQuery builds which exclude the "event aliases" module that defines said method. See https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md#js')
         }
       })
 
