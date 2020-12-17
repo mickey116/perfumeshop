@@ -1,9 +1,8 @@
 // bootstrap
-@import './vendors/bootstrap/scss/functions';
-@import './helpers/variables';
-@import './vendors/bootstrap/scss/mixins';
-@import './vendors/bootstrap/scss/bootstrap.scss';
-
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 
 // base
 @import './base/grid.scss';
